@@ -5,9 +5,10 @@ import { RestaurantDetails } from "./Components/RestaurantDetails";
 function App() {
   return (
     <div className="App">
-      <Routes>
+      {/* <Routes>
         <Route path="/" element={<RestaurantDetails />} />
-      </Routes>
+      </Routes> */}
+      <RestaurantDetails />
     </div>
   );
 }
