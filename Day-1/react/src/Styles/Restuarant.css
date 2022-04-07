@@ -1,0 +1,20 @@
+.img_url {
+  width: 250px;
+  height: 150px;
+}
+.full_details {
+  display: flex;
+  gap: 20px;
+  border: 1px solid red;
+  margin: auto;
+  margin-top: 10px;
+  width: 50%;
+}
+.main_content > h3 {
+  text-align: center;
+}
+.srt_btn,
+.srt_rating,
+.payment_method {
+  text-align: center;
+}

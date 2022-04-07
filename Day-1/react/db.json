@@ -1,0 +1,224 @@
+{
+  "restaurants": [
+    {
+      "title": "Uru Brewpark",
+      "category": "Continental",
+      "payment_method": "cash",
+      "image_url": "https://im.whatshot.in/img/2020/Jun/header-725x420-delhi-17097-a-1593157331.jpg",
+      "total_votes": "766",
+      "reviews": "512",
+      "cost_for_one": 600,
+      "rating": 4.3,
+      "id": 1
+    },
+    {
+      "title": "Uru chew",
+      "category": "Italian",
+      "payment_method": "card",
+      "image_url": "https://image.shutterstock.com/image-photo/cozy-wooden-interior-restaurant-copy-260nw-717595390.jpg",
+      "total_votes": "7566",
+      "reviews": "5152",
+      "cost_for_one": 700,
+      "rating": 3.5,
+      "id": 2
+    },
+    {
+      "title": "Rewpark",
+      "category": "Asian",
+      "payment_method": "upi",
+      "image_url": "https://images.squarespace-cdn.com/content/v1/58e2a7a7d1758e21443583f6/1526475061226-1I3JW7JH3FTJ2MSCVNE1/LEDGER_INTERIORS_0617-30.jpg?format=2500w",
+      "total_votes": "7626",
+      "reviews": "5102",
+      "cost_for_one": 800,
+      "rating": 2.5,
+      "id": 3
+    },
+    {
+      "title": "Chowmein",
+      "category": "Dessert",
+      "payment_method": "cash",
+      "image_url": "https://media-cdn.tripadvisor.com/media/photo-s/1a/64/1a/cb/hotel-paragon-restaurant.jpg",
+      "total_votes": "1766",
+      "reviews": "1512",
+      "cost_for_one": 900,
+      "rating": 4.0,
+      "id": 4
+    },
+    {
+      "title": "Gili",
+      "category": "Dessert,Italian",
+      "payment_method": "card",
+      "image_url": "https://assets.gqindia.com/photos/5d88c0fd60e1e8000856c9fe/3:2/w_1619,h_1079,c_limit/Best-veg-restaurants.jpg",
+      "total_votes": "166",
+      "reviews": "152",
+      "cost_for_one": 300,
+      "rating": 4.6,
+      "id": 5
+    },
+    {
+      "title": "Empire",
+      "category": "Dessert,Italian,Indian",
+      "payment_method": "upi",
+      "image_url": "https://media-cdn.tripadvisor.com/media/photo-s/19/aa/c2/e1/das-og.jpg",
+      "total_votes": "1666",
+      "reviews": "1525",
+      "cost_for_one": 500,
+      "rating": 4.1,
+      "id": 6
+    },
+    {
+      "title": "Swathi Restaurant",
+      "category": "Indian,Pizza,Non-veg",
+      "payment_method": "cash",
+      "image_url": "https://b.zmtcdn.com/data/pictures/2/19115232/50b3e963feda9012f1d6c3c9b816b573.jpg",
+      "total_votes": "1668",
+      "reviews": "1552",
+      "cost_for_one": 800,
+      "rating": 3.6,
+      "id": 7
+    },
+    {
+      "title": "Bowl Company",
+      "category": "Pizza,Ricebowl",
+      "payment_method": "card",
+      "image_url": "https://cdn.broadsheet.com.au/cache/34/48/34485e9ff065f5e8a32889c3b8ad0b1e.jpg",
+      "total_votes": "1566",
+      "reviews": "1152",
+      "cost_for_one": 500,
+      "rating": 2.5,
+      "id": 8
+    },
+    {
+      "title": "Sugar Factory",
+      "category": "Cakes,Pan Pizza,Dessert",
+      "payment_method": "upi",
+      "image_url": "https://image.shutterstock.com/z/stock-photo-friends-having-a-pasta-dinner-at-home-of-at-a-restaurant-1206985765.jpg",
+      "total_votes": "1566",
+      "reviews": "1152",
+      "cost_for_one": 500,
+      "rating": 2.5,
+      "id": 9
+    },
+    {
+      "title": "Ammas",
+      "category": "Cakes,Dessert,Refresher",
+      "payment_method": "cash",
+      "image_url": "https://media.istockphoto.com/photos/close-up-of-group-of-friends-hands-with-a-fork-having-fun-eating-and-picture-id1034740330",
+      "total_votes": "452",
+      "reviews": "425",
+      "cost_for_one": 300,
+      "rating": 1.5,
+      "id": 10
+    },
+    {
+      "title": "Murugak",
+      "category": "Continental",
+      "payment_method": "cash",
+      "image_url": "https://im.whatshot.in/img/2020/Jun/header-725x420-delhi-17097-a-1593157331.jpg",
+      "total_votes": "766",
+      "reviews": "512",
+      "cost_for_one": 1600,
+      "rating": 1.5,
+      "id": 11
+    },
+    {
+      "title": "Onesta",
+      "category": "Italian",
+      "payment_method": "card",
+      "image_url": "https://image.shutterstock.com/image-photo/cozy-wooden-interior-restaurant-copy-260nw-717595390.jpg",
+      "total_votes": "566",
+      "reviews": "152",
+      "cost_for_one": 900,
+      "rating": 3.8,
+      "id": 12
+    },
+    {
+      "title": "Chichaba",
+      "category": "Indian",
+      "payment_method": "upi",
+      "image_url": "https://images.squarespace-cdn.com/content/v1/58e2a7a7d1758e21443583f6/1526475061226-1I3JW7JH3FTJ2MSCVNE1/LEDGER_INTERIORS_0617-30.jpg?format=2500w",
+      "total_votes": "726",
+      "reviews": "5102",
+      "cost_for_one": 800,
+      "rating": 5.0,
+      "id": 13
+    },
+    {
+      "title": "Le arabia",
+      "category": "Indian,Arabic",
+      "payment_method": "cash",
+      "image_url": "https://media-cdn.tripadvisor.com/media/photo-s/1a/64/1a/cb/hotel-paragon-restaurant.jpg",
+      "total_votes": "5852",
+      "reviews": "5172",
+      "cost_for_one": 1450,
+      "rating": 4.6,
+      "id": 14
+    },
+    {
+      "title": "Gilliyis ",
+      "category": "Dessert,Italian",
+      "payment_method": "card",
+      "image_url": "https://assets.gqindia.com/photos/5d88c0fd60e1e8000856c9fe/3:2/w_1619,h_1079,c_limit/Best-veg-restaurants.jpg",
+      "total_votes": "4512",
+      "reviews": "7852",
+      "cost_for_one": 1400,
+      "rating": 3.9,
+      "id": 15
+    },
+    {
+      "title": "Basava dosa",
+      "category": "Dessert,Italian,Indian",
+      "payment_method": "upi",
+      "image_url": "https://media-cdn.tripadvisor.com/media/photo-s/19/aa/c2/e1/das-og.jpg",
+      "total_votes": "7655",
+      "reviews": "8654",
+      "cost_for_one": 1500,
+      "rating": 4.4,
+      "id": 16
+    },
+    {
+      "title": "Chakravathi Non-veg",
+      "category": "Indian,Pizza,Non-veg",
+      "payment_method": "cash",
+      "image_url": "https://b.zmtcdn.com/data/pictures/2/19115232/50b3e963feda9012f1d6c3c9b816b573.jpg",
+      "total_votes": "1668",
+      "reviews": "15552",
+      "cost_for_one": 300,
+      "rating": 3.6,
+      "id": 17
+    },
+    {
+      "title": "Dominoz",
+      "category": "Pizza,Ricebowl",
+      "payment_method": "card",
+      "image_url": "https://cdn.broadsheet.com.au/cache/34/48/34485e9ff065f5e8a32889c3b8ad0b1e.jpg",
+      "total_votes": "466",
+      "reviews": "1152",
+      "cost_for_one": 400,
+      "rating": 4.1,
+      "id": 18
+    },
+    {
+      "title": "Cakezone",
+      "category": "Cakes,Pan Pizza,Dessert",
+      "payment_method": "upi",
+      "image_url": "https://image.shutterstock.com/z/stock-photo-friends-having-a-pasta-dinner-at-home-of-at-a-restaurant-1206985765.jpg",
+      "total_votes": "15566",
+      "reviews": "16152",
+      "cost_for_one": 700,
+      "rating": 3.6,
+      "id": 19
+    },
+    {
+      "title": "Cake Party",
+      "category": "Cakes,Dessert,Refresher",
+      "payment_method": "cash",
+      "image_url": "https://media.istockphoto.com/photos/close-up-of-group-of-friends-hands-with-a-fork-having-fun-eating-and-picture-id1034740330",
+      "total_votes": "5452",
+      "reviews": "7425",
+      "cost_for_one": 650,
+      "rating": 2.7,
+      "id": 20
+    }
+  ]
+}
