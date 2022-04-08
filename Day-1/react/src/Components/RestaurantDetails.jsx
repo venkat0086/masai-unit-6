@@ -8,7 +8,7 @@ export const RestaurantDetails = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:8080/restaurants?_limit=5&_page=${page}`)
+      .get(`http://localhost:8080/get-restaurants?_limit=5&_page=${page}`)
       .then((res) => {
         setData([...res.data]);
       });
@@ -16,7 +16,9 @@ export const RestaurantDetails = () => {
 
   const ascSortMethod = () => {
     axios
-      .get(`http://localhost:8080/restaurants?&_sort=cost_for_one&_order=asc`)
+      .get(
+        `http://localhost:8080/get-restaurants?&_sort=cost_for_one&_order=asc`
+      )
       .then((res) => {
         setData([...res.data]);
       });
@@ -24,7 +26,9 @@ export const RestaurantDetails = () => {
 
   const dscSortMethod = () => {
     axios
-      .get("http://localhost:8080/restaurants?&_sort=cost_for_one&_order=desc")
+      .get(
+        "http://localhost:8080/get-restaurants?&_sort=cost_for_one&_order=desc"
+      )
       .then((res) => {
         setData([...res.data]);
       });
@@ -33,7 +37,7 @@ export const RestaurantDetails = () => {
   const cashFilter = () => {
     axios
       .get(
-        "http://localhost:8080/restaurants?payment_method=cash&_limit=5&_page=${page}"
+        "http://localhost:8080/get-restaurants?payment_method=cash&_limit=5&_page=${page}"
       )
       .then((res) => {
         setData([...res.data]);
@@ -42,7 +46,7 @@ export const RestaurantDetails = () => {
 
   const cardFilter = () => {
     axios
-      .get("http://localhost:8080/restaurants?payment_method=card")
+      .get("http://localhost:8080/get-restaurants?payment_method=card")
       .then((res) => {
         setData([...res.data]);
       });
@@ -50,7 +54,7 @@ export const RestaurantDetails = () => {
 
   const upiFilter = () => {
     axios
-      .get("http://localhost:8080/restaurants?payment_method=upi")
+      .get("http://localhost:8080/get-restaurants?payment_method=upi")
       .then((res) => {
         setData([...res.data]);
       });
@@ -58,7 +62,7 @@ export const RestaurantDetails = () => {
 
   const fourRate = () => {
     axios
-      .get("http://localhost:8080/restaurants?rating_gte=4&rating_lte=4.9")
+      .get("http://localhost:8080/get-restaurants?rating_gte=4&rating_lte=4.9")
       .then((res) => {
         setData([...res.data]);
       });
@@ -66,7 +70,7 @@ export const RestaurantDetails = () => {
 
   const threeRate = () => {
     axios
-      .get("http://localhost:8080/restaurants?rating_gte=3&rating_lte=3.9")
+      .get("http://localhost:8080/get-restaurants?rating_gte=3&rating_lte=3.9")
       .then((res) => {
         setData([...res.data]);
       });
@@ -74,7 +78,7 @@ export const RestaurantDetails = () => {
 
   const twoRate = () => {
     axios
-      .get("http://localhost:8080/restaurants?rating_gte=2&rating_lte=2.9")
+      .get("http://localhost:8080/get-restaurants?rating_gte=2&rating_lte=2.9")
       .then((res) => {
         setData([...res.data]);
       });
@@ -82,7 +86,7 @@ export const RestaurantDetails = () => {
 
   const oneRate = () => {
     axios
-      .get("http://localhost:8080/restaurants?rating_gte=1&rating_lte=1.9")
+      .get("http://localhost:8080/get-restaurants?rating_gte=1&rating_lte=1.9")
       .then((res) => {
         setData([...res.data]);
       });
@@ -95,7 +99,7 @@ export const RestaurantDetails = () => {
 
   const formHandler = (e) => {
     e.preventDefault();
-    axios.post(`http://localhost:8080/restaurants`, formData).then(() => {
+    axios.post(`http://localhost:8080/get-restaurants`, formData).then(() => {
       alert("Data Saved");
     });
   };

@@ -1,5 +1,5 @@
 {
-  "restaurants": [
+  "get-restaurants": [
     {
       "title": "Uru Brewpark",
       "category": "Continental",
