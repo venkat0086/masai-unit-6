@@ -158,6 +158,7 @@ export const RestaurantDetails = () => {
       </form>
       <div className="pagination">
         <button
+          disabled={page === 1}
           onClick={() => {
             setPage(page - 1);
           }}
