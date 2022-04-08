@@ -1,43 +1,42 @@
-import { useState } from "react";
+import { useReducer, useState } from "react";
 import logo from "./logo.svg";
 import "./App.css";
+import { Routes, Route } from "react-router-dom";
+import { Home } from "./Pages/Home";
+import { FirstPage } from "./Pages/FirstPage";
+import { SecondPage } from "./Pages/SecondPage";
+
+// const initialState = { count: 0 };
+
+// const reducer = (state, action) => {
+//   switch (action.type) {
+//     case "INCREMENT":
+//       return { count: state.count + action.payload };
+//     case "DECREMENT":
+//       return { count: state.count - action.payload };
+//     default:
+//       throw new Error();
+//   }
+// };
 
 function App() {
-  const [count, setCount] = useState(0);
+  // const [state, dispatch] = useReducer(reducer, initialState);
+  // const { count } = state;
 
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Hello Vite + React!</p>
-        <p>
-          <button type="button" onClick={() => setCount((count) => count + 1)}>
-            count is: {count}
-          </button>
-        </p>
-        <p>
-          Edit <code>App.jsx</code> and save to test HMR updates.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-          {" | "}
-          <a
-            className="App-link"
-            href="https://vitejs.dev/guide/features.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Vite Docs
-          </a>
-        </p>
-      </header>
+      {/* <h1>Counter: {count}</h1>
+      <button onClick={() => dispatch({ type: "DECREMENT", payload: 2 })}>
+        -
+      </button>
+      <button onClick={() => dispatch({ type: "INCREMENT", payload: 2 })}>
+        +
+      </button> */}
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/registration/one" element={<FirstPage />} />
+        <Route path="/registration/two" element={<SecondPage />} />
+      </Routes>
     </div>
   );
 }
