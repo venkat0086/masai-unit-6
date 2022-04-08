@@ -1,10 +1,9 @@
-import { useReducer, useState } from "react";
-import logo from "./logo.svg";
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import { Home } from "./Pages/Home";
 import { FirstPage } from "./Pages/FirstPage";
 import { SecondPage } from "./Pages/SecondPage";
+import { Users } from "./Pages/Users";
 
 // const initialState = { count: 0 };
 
@@ -36,6 +35,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/registration/one" element={<FirstPage />} />
         <Route path="/registration/two" element={<SecondPage />} />
+        <Route path="/users" element={<Users />} />
       </Routes>
     </div>
   );

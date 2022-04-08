@@ -1,19 +1,58 @@
 {
-  "posts": [
+  "users": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "name": "Venkat",
+      "age": "23",
+      "date_of_birth": "1999-10-07",
+      "state_of_residence": "Karanataka",
+      "address": "Bengaluru",
+      "pincode": "560010",
+      "id": 1
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "name": "Hari",
+      "age": "23",
+      "date_of_birth": "2000-12-05",
+      "state_of_residence": "Karnataka",
+      "address": "bangalore",
+      "pincode": "560015",
+      "id": 2
+    },
+    {
+      "name": "Bhima",
+      "age": "22",
+      "date_of_birth": "2022-04-16",
+      "state_of_residence": "Karanataka",
+      "address": "Tumkuru",
+      "pincode": "532564",
+      "id": 3
+    },
+    {
+      "name": "Uday",
+      "age": "23",
+      "date_of_birth": "2022-04-09",
+      "state_of_residence": "Karamatal",
+      "address": "Begaluru",
+      "pincode": "560656",
+      "id": 4
+    },
+    {
+      "name": "hari",
+      "age": "45",
+      "date_of_birth": "2022-04-09",
+      "state_of_residence": "Karnakat",
+      "address": "BEnagorur",
+      "pincode": "56544",
+      "id": 5
+    },
+    {
+      "name": "Pawan",
+      "age": "23",
+      "date_of_birth": "2000-10-07",
+      "state_of_residence": "Harihara",
+      "address": "hariahar",
+      "pincode": "565655",
+      "id": 6
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }

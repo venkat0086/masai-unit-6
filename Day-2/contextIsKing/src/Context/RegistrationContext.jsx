@@ -1,4 +1,5 @@
 import { createContext, useReducer } from "react";
+import axios from "axios";
 
 const initialState = {
   name: "",
@@ -33,6 +34,13 @@ export const RegisterContext = createContext();
 export function RegisterContextProvider({ children }) {
   const [state, dispatch] = useReducer(reducer, initialState);
 
+  const handleSubmit = () => {
+    axios.post("http://localhost:8080/users", state).then((res) => {
+      alert("Data Saved");
+      window.location.reload();
+    });
+  };
+
   const { name, age, date_of_birth, state_of_residence, address, pincode } =
     state;
 
@@ -45,6 +53,7 @@ export function RegisterContextProvider({ children }) {
         state_of_residence,
         address,
         pincode,
+        handleSubmit,
         dispatch,
       }}
     >
