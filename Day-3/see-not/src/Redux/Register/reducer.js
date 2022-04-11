@@ -2,7 +2,7 @@ import { REGISTER_FAILURE, REGISTER_LOADING, REGISTER_SUCCESS } from "./action";
 
 const initState = {
   loading: true,
-  //   isAuthenticated: false,
+  isAuthenticated: false,
   //   token: "",
   error: false,
 };
@@ -15,7 +15,7 @@ export const registerReducer = (store = initState, { type, payload }) => {
       return {
         ...store,
         loading: false,
-        // isAuthenticated: true,
+        isAuthenticated: true,
         // token: payload,
         error: false,
       };

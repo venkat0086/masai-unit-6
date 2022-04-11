@@ -30,9 +30,13 @@ export const Login = () => {
       .then((res) => {
         dispatch(loginSuccess(res.token));
         navigate("/");
-        console.log(res.token);
+        alert("Login Success");
       })
-      .catch((err) => dispatch(loginFailure()));
+      .catch((err) => {
+        alert("User not found..! Register Now");
+        navigate("/register");
+        dispatch(loginFailure());
+      });
   };
 
   return (

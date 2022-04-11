@@ -7,5 +7,5 @@ export const Home = () => {
   if (!isAuthenticated) {
     return <Navigate to="/login" />;
   }
-  return <div>Home</div>;
+  return <h1>Dashboard</h1>;
 };

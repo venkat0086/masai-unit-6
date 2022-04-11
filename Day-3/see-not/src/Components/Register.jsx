@@ -38,10 +38,13 @@ export const Register = () => {
       .then((res) => res.json())
       .then((res) => {
         dispatch(registerSuccess(res));
-        console.log(res);
+        alert(res.message);
         navigate("/login");
       })
-      .catch((err) => dispatch(registerFailure()));
+      .catch((err) => {
+        dispatch(registerFailure());
+        alert("Registrattion Failed");
+      });
   };
 
   return (
