@@ -1,45 +1,50 @@
-import { useState } from 'react'
-import logo from './logo.svg'
-import './App.css'
+// import { useState } from "react";
+import { Route, Routes, Link, Navigate } from "react-router-dom";
+import "./App.css";
+import { Login } from "./Components/Login";
+import { Home } from "./Components/Home";
+import { Todos } from "./Components/TodosCreate";
+import { useSelector } from "react-redux";
+import { Register } from "./Components/Register";
+
+const PrivateRoute = ({ isAuthenticated, children }) => {
+  return isAuthenticated ? children : <Navigate to="/login" />;
+};
 
 function App() {
-  const [count, setCount] = useState(0)
+  // const [count, setCount] = useState(0);
+
+  const { isAuthenticated } = useSelector((state) => state.login);
 
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Hello Vite + React!</p>
-        <p>
-          <button type="button" onClick={() => setCount((count) => count + 1)}>
-            count is: {count}
-          </button>
-        </p>
-        <p>
-          Edit <code>App.jsx</code> and save to test HMR updates.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-          {' | '}
-          <a
-            className="App-link"
-            href="https://vitejs.dev/guide/features.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Vite Docs
-          </a>
-        </p>
-      </header>
+      <div>
+        <Link to="/">Home </Link>
+        <Link to="/login">Login </Link>
+        <Link to="/todos">Create Todos </Link>
+      </div>
+      <Routes>
+        <Route path="/login" element={<Login />} />
+        <Route
+          path="/"
+          element={
+            <PrivateRoute isAuthenticated={isAuthenticated}>
+              <Home />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="/todos"
+          element={
+            <PrivateRoute isAuthenticated={isAuthenticated}>
+              <Todos />
+            </PrivateRoute>
+          }
+        />
+        <Route path="/register" element={<Register />} />
+      </Routes>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
