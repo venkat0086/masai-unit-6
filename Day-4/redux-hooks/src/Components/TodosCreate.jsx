@@ -26,12 +26,12 @@ const reducer = (state, { type, payload }) => {
       return { ...state, date: payload };
     case "UPDATE_SUBTASKS":
       return { ...state, subtasks: [...state.subtasks, ...payload] };
-    case "TOGGLE_TASKS":
+    case "TOGGLE_SUBTASK":
       const subtasksAfterToggle = state.subtasks.map((e) =>
         e.id === payload.id ? { ...e, subtaskStatus: payload.status } : e
       );
       return { ...state, subtasks: subtasksAfterToggle };
-    case "DELETE_TASKS":
+    case "DELETE_SUBTASK":
       const subtasksAfterDeletion = state.subtasks.filter(
         (e) => e.id !== payload
       );
@@ -202,7 +202,7 @@ export const Todos = () => {
                   checked={subtask.subtaskStatus}
                   onChange={(e) =>
                     dispatch({
-                      type: "TOGGLE_TASKS",
+                      type: "TOGGLE_SUBTASK",
                       payload: { id: subtask.id, status: e.target.checked },
                     })
                   }
