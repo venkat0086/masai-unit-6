@@ -25,7 +25,7 @@ const reducer = (state, { type, payload }) => {
     case "CHANGE_DATE":
       return { ...state, date: payload };
     case "UPDATE_SUBTASKS":
-      return { ...state, subtasks: [...state.subtasks, ...payload] };
+      return { ...state, subtasks: [...state.subtasks, payload] };
     case "TOGGLE_SUBTASK":
       const subtasksAfterToggle = state.subtasks.map((e) =>
         e.id === payload.id ? { ...e, subtaskStatus: payload.status } : e
