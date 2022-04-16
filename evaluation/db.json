@@ -1,0 +1,76 @@
+{
+  "countries": [
+    {
+      "country": "India",
+      "city": "Bangalroe",
+      "population": 5626231,
+      "id": 1
+    },
+    {
+      "country": "Pakistan",
+      "city": "Lahore",
+      "population": 165416534,
+      "id": 2
+    },
+    {
+      "country": "Nepal",
+      "city": "Nepal",
+      "population": 566542156,
+      "id": 3
+    },
+    {
+      "country": "Bhutan",
+      "city": "Bhutan",
+      "population": 46541621,
+      "id": 4
+    },
+    {
+      "country": "India",
+      "city": "Mumbai",
+      "population": 45454546,
+      "id": 5
+    },
+    {
+      "country": "India",
+      "city": "Gujurath",
+      "population": 165324165,
+      "id": 6
+    },
+    {
+      "country": "Pakistan",
+      "city": "Phulke",
+      "population": 456465465,
+      "id": 10
+    },
+    {
+      "country": "India",
+      "city": "Pune",
+      "population": 65465465,
+      "id": 11
+    },
+    {
+      "country": "India",
+      "city": "Delhi",
+      "population": 74654654,
+      "id": 12
+    },
+    {
+      "country": "Nepal",
+      "city": "nejh",
+      "population": 56465465,
+      "id": 13
+    },
+    {
+      "country": "Pakistan",
+      "city": "Jujju",
+      "population": 1022252,
+      "id": 14
+    },
+    {
+      "country": "Pakistan",
+      "city": "Kijjjuu",
+      "population": 2100000,
+      "id": 15
+    }
+  ]
+}
