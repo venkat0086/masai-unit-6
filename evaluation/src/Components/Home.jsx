@@ -23,10 +23,12 @@ export const Home = () => {
       });
   };
 
-  const handleFilter = (choice) => {
-    axios.get(`http://localhost:8080/countries?country=${choice}`).then(() => {
-      showData();
-    });
+  const handleFilter = () => {
+    axios
+      .get(`http://localhost:8080/countries?country=${data.country}`)
+      .then(() => {
+        showData();
+      });
   };
 
   const descSorting = () => {
@@ -61,7 +63,10 @@ export const Home = () => {
         >
           High To Low
         </button>
-        <select onSelect={handleFilter}>
+        <br />
+        <br />
+        <div> Filter By Country: </div>
+        <select onChange={handleFilter}>
           <option value="">Select</option>
           <option value="India">India</option>
           <option value="Pakistan">Pakistan</option>
