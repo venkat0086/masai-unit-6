@@ -3,12 +3,12 @@ import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import { CountryDetails } from "./Components/CountryDetails";
 import { Home } from "./Components/Home";
+import { NavBar } from "./Components/NavBar";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <div className="App">
+      <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/add-country" element={<CountryDetails />} />
