@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+  width: 20%;
+  margin: auto;
+  border: 8px solid red;
+  flex-wrap: wrap;
+}
+
+img {
+  margin: 5px;
+  width: 100%;
+  height: 200px;
+}
