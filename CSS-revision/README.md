@@ -1,1 +1,1 @@
-deploy link: (here)[https://imgur2.netlify.app/]
+deploy link: https://imgur2.netlify.app/
