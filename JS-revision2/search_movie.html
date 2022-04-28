@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search-Movies</title>
+    <link rel="stylesheet" href="./searchMovie.css" />
+  </head>
+  <body>
+    <div id="contain">
+      <div>
+        <input
+          oninput="debounce(searchMovie,1000)"
+          type="text"
+          id="movie"
+          placeholder="search for a movie"
+        />
+        <div id="movies"></div>
+      </div>
+
+      <div id="appendMoviesDiv"></div>
+    </div>
+  </body>
+</html>
+<script src="./searchMovie.js"></script>
