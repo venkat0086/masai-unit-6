@@ -28,7 +28,7 @@ function App() {
     setTimeout(() => {
       setState((pre) => [
         ...pre,
-        ...Array.from(Array(40).keys(), (n) => n + pre.length + 1),
+        ...Array.from(Array(25).keys(), (n) => n + pre.length + 1),
       ]);
       setFetching(false);
     }, 2500);
